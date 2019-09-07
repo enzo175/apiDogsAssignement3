@@ -10,8 +10,8 @@ function getDogImage(breed) {
 function displayResults(responseJson) {
   console.log(responseJson);
 
-  if (responseJson.message === "Breed not found") {
-    alert('breed not identifiable, try again.');
+  if (responseJson.message === "Breed not found (master breed does not exist)") {
+    alert('breed not identifiable, try again.')
   } else {
     $('.results').html(`<h2>Check out this dog!</h2>`);
 
